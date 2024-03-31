@@ -1,11 +1,12 @@
 const Part = (props) => {
-    return (
-      <>
+  console.log("Inside Part", props.part.name, props.part.exercises);
+  return (
+    <>
       <p>
-        {props.part} {props.exercises}
-      </p>      
-      </>
-    )
-  }
-  
-  export default Part
+        {props.part.name} {props.part.exercises}
+      </p>
+    </>
+  );
+};
+
+export default Part;
